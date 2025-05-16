@@ -1,3 +1,5 @@
+using BAI2GIUAKY;
+
 namespace bai2
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace bai2
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new Form_Dangnhap());
         }
     }
 }
