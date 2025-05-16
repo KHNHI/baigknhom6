@@ -66,7 +66,6 @@ namespace Bai1_Nhom_6
                 return;
             }
 
-
             ListViewItem selectedItem = lvNhanVien.SelectedItems[0];
 
             selectedItem.Text = txtMaSo.Text;
@@ -82,17 +81,6 @@ namespace Bai1_Nhom_6
             this.Close();
         }
 
-        private void lvNhanVien_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lvNhanVien.SelectedItems.Count > 0)
-            {
-                ListViewItem item = lvNhanVien.SelectedItems[0];
-                txtMaSo.Text = item.Text;
-                txtHoTen.Text = item.SubItems[1].Text;
-                txtNgaySinh.Text = item.SubItems[2].Text;
-                txtEmail.Text = item.SubItems[3].Text;
-            }
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -142,11 +130,6 @@ namespace Bai1_Nhom_6
                 }
             }
 
-        }
-
-        private void lvNhanVien_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            
         }
 
         private void lvNhanVien_SelectedIndexChanged_2(object sender, EventArgs e)
