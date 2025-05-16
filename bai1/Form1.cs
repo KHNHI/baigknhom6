@@ -32,9 +32,10 @@ namespace Bai1_Nhom_6
             txtMaSo.Focus();
 
 
+            
             btnAdd.Enabled = false;
-            btnSave.Enabled = true;
             btnCancel.Enabled = true;
+            btnSave.Enabled = true;
 
         }
 
@@ -159,5 +160,7 @@ namespace Bai1_Nhom_6
                 txtEmail.Text = item.SubItems[3].Text;
             }
         }
+
+      
     }
 }
